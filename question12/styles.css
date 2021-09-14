@@ -1,0 +1,207 @@
+
+			* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	font-family: sans-serif;
+}
+
+/* Header CSS */
+
+#header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 64px 0;
+}
+
+#header .heading {
+	font-weight: 400;
+}
+
+#header .heading,
+#header .nav-text {
+	color: rgb(51,162,204);
+}
+
+#header .nav {
+	display: flex;
+	align-items: center;
+}
+
+#header .nav .navbarlink:not(:last-child) {
+	margin-right: 16px;
+}
+
+.divider {
+	background-color: rgb(228,228,228);
+	opacity: 0.3;
+	margin: 24px 0 16px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0 auto;
+	width: 400px;
+
+	border: 1px solid rgb(178,178,178);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.form .heading {
+	padding: 20px 0 20px 16px;
+	background-color: rgb(178,178,178);
+	color: white;
+}
+
+.form .form {
+	padding: 11.84px 16px;
+}
+
+.form .field {
+	display: flex;
+	flex-direction: column;
+}
+
+.field:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.field label {
+	color: rgb(140,140,140);
+	margin-bottom: 4px;
+}
+
+.field input,
+.field textarea,
+.field select {
+	width: 100%;
+	outline: none;
+	padding: 4px 8px;
+	border-width: 1px;
+	border-color: rgb(178,178,178);
+	border-radius: 4px;
+}
+
+.field input[name='version'] {
+	width: 30%;
+}
+
+.field textarea {
+	min-height: 60px;
+	max-height: 80px;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.field select {
+	color: white;
+	background-color: rgb(44,211,167);
+	border: none;
+}
+
+.form .radio-group {
+	display: flex;
+	margin-bottom: 8px;
+}
+
+.form .radio-group .field {
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: unset;
+	flex-grow: 1;
+}
+
+.form .radio-group .field label {
+	margin-left: 8px;
+	margin-bottom: unset;
+}
+
+.form .radio-group .field input {
+	width: 13px;
+}
+
+.form .footer {
+	background-color: rgb(228,228,228);
+	padding: 16px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.form .footer .submit-btn {
+	background-color: rgb(44,211,167);
+	border: none;
+	outline: none;
+	padding: 8px 24px;
+	border-radius: 8px;
+	color: white;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.form .field input[type='file'] {
+	width: 100%;
+	border: 1px solid rgb(178,178,178);
+	border-radius: 4px;
+	padding: 4px 8px;
+
+	position: relative;
+
+	cursor: pointer;
+
+	color: rgb(140,140,140);
+
+	padding-right: 110px;
+}
+
+.form .field
+	input[type='file']::-webkit-file-upload-button {
+	background-color: rgb(178,178,178);
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	margin: unset;
+
+	height: 100%;
+
+	border: none;
+	outline: none;
+
+	color: white;
+
+	cursor: pointer;
+
+	width: 100px;
+}
+
+.form .field input[type='file']::placeholder
+{
+	background-color: rgb(178,178,178);
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	margin: unset;
+
+	height: 100%;
+
+	border: none;
+	outline: none;
+
+	color: white;
+
+	cursor: pointer;
+
+	width: 100px;
+}
+		
